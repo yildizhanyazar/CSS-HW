@@ -1,0 +1,154 @@
+.sidenav{
+    height: 100%;
+    width: 0%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 1s;
+    padding-top: 60px;
+}
+.hoverpls:hover{
+    background-color: white;
+    color: black;
+}
+.sidenav>a{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+    display: block;
+    transition: all 1s;
+}
+.sidenav>.closebtn{
+    position: absolute;
+    top: 0;
+    right: 8%;
+    font-size: 36px;
+    margin-left: 50px;
+}
+@media screen and (max-height=450px){
+    .sidenav{padding-top: 15px;}
+    .sidenav>a{font-size: 18px;}
+}
+.sppans{
+    max-width: 4%;
+    max-height: 8%;
+    width: fit-content;
+    height: fit-content;
+    font-size: 175%;
+    cursor: pointer;
+    padding: 0.5%;
+    margin: 0.25%;
+    transition:  3s;
+    border-radius: 15%;
+    color: rgb(248, 89, 15);
+    position: fixed;
+    opacity: 100%;
+    top: 0px;
+}
+.sppans:hover{
+    color: #03a71e;
+}
+.darkMode{
+    background-color: #000;
+    color: white;
+}
+.main{
+    padding: 0.5%;
+    margin: 0.5%;
+    display: flex;
+    justify-content:flex-start;
+}
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 100%;
+    font-size: x-large;
+}
+.product{
+    padding: 5%;
+    margin: 0.1%;
+    width: 100%;
+    max-width: 100%;
+}
+.productBlog{
+    margin: 1%;
+    width: 97%;
+    max-width: 98%;
+    margin-bottom: 1%;
+}
+img{
+    width: 80%;
+}
+.productImg{
+    text-align: center;
+    width: 96%;
+    padding: 1%;
+    margin: 1%;
+    border-bottom: 3px solid #978b8b;
+}
+.productDesc{
+    width: 96%;
+    padding: 1%;
+    margin: 1%;
+    border-bottom: 3px solid #978b8b;
+}
+/*-------------------------------------------------- Slides --------------------------------------------------*/
+*{box-sizing: border-box;}
+.slideShowContainer{
+    max-width: 90%;
+    max-height: 75%;
+    position: relative;
+    margin: auto;
+    top: 15px;
+}
+.mySlides{
+    display: none;
+}
+.text{
+    color: #000;
+    font-size: 36px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+    background-color: white;
+    opacity: 75%;
+}
+.numberText{
+    color: #f2f2f2;
+    font-size: 12px;
+    padding-top: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+.dot{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active, .dot:hover{
+    background-color: #717171;
+}
+.fade{
+    animation-name:fade ;
+    animation-duration: 1.5s;
+}
+@keyframes fade{
+    from {opacity: .4;}
+    to {opacity: 1;}
+}
+.slidesImg{
+    height: 850px;
+    width: 100%;
+}
